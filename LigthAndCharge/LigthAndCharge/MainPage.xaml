@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LigthAndCharge.MainPage">
+
+    <StackLayout>
+        <Image Source="logo.png"
+               Scale="0.5"
+               HorizontalOptions="Start"
+               Margin="-10,0,0,0"
+               VerticalOptions="Start"/>
+        <Label Text="LightAndCHarge"
+               FontSize="Title"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="Center"
+               Margin="100,-115,0,0"/>
+        <Switch IsToggled="false"
+                x:Name="SwitchT"
+                HorizontalOptions="Center"
+                Margin="0,70,0,0"/>
+        <Label Text="Attiva la lampada"
+               TextColor="Red"
+               FontSize="Subtitle"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="Center"
+               Margin="0,10,0,0"/>
+        <Image Source="lampada.png"
+               x:Name="lampadaimage"
+               Scale="0.2"
+               Margin="0,-200,0,0"/>
+        <Image Source="rettangolo.png"
+               ScaleY="0.2"
+               ScaleX="0.9"
+               Margin="0,-310,0,0"/>
+        <Slider Minimum="0" Maximum="10"
+                Margin="40,-220,40,0"
+                ThumbColor="Black"/>
+        <Image Source="scuola.png"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"
+               Margin="0,-200,0,0"/>
+    </StackLayout>
+
+</ContentPage>
